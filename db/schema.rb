@@ -11,7 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130908013040) do
+ActiveRecord::Schema.define(version: 20130908153332) do
+
+  create_table "holidayforms", force: true do |t|
+    t.string   "name"
+    t.date     "start"
+    t.date     "end"
+    t.integer  "budget"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "name"

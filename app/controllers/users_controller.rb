@@ -11,7 +11,7 @@ class UsersController < ApplicationController
   @user=User.new(user_params)
   if @user.save
   #success
-  flash[:success] = "Welcome to the Dhinchak App!"
+  flash[:success] = "Welcome to your Holidayideas Profile! "
   redirect_to @user
   
   else
