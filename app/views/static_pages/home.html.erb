@@ -1,10 +1,14 @@
 <% provide(:title,'Home') %>
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Ruby on Rails Tutorial Sample App | <%= yield(:title) %></title>
-  </head>
-  <body>
-      Contents
-  </body>
-</html>
+<div class="center hero-unit">
+  <h1>Welcome to the Dhinchak! App</h1>
+
+  <h2>
+    This is the home page for the
+    <a href="http://railstutorial.org/">Dhinchak</a>
+    sample app
+  </h2>
+
+  <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+</div>
+
+<%= link_to image_tag("troll.jpeg", alt: "Rails"), 'http://rubyonrails.org/' %>
